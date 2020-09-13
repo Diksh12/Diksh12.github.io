@@ -149,7 +149,7 @@ header .navbar ul li a.active::before{
 
 .home{
     min-height: 160vh;
-    background-image: url("E:/Responsive website/img/keyboard.jpg");
+    background-image: url("img/keyboard.jpg");
     background-size: cover;
     background-position: center;
     padding: 15px;
