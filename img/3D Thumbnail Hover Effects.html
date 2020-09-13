@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///E:/Responsive%20website/Mindex.html -->
+<html lang="en" class=" js csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>3D Thumbnail Hover Effects</title>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="3D Thumbnail Hover Effects">
+		<meta name="keywords" content="3d, 3dtransform, hover, effect, thumbnail, overlay, curved, folded">
+
+		<link rel="stylesheet" type="text/css" href="./3D Thumbnail Hover Effects_files/demo.css">
+		<link rel="stylesheet" type="text/css" href="./3D Thumbnail Hover Effects_files/style5.css">
+		<link rel="stylesheet" type="text/css" href="./3D Thumbnail Hover Effects_files/css">
+
+		<script src="./3D Thumbnail Hover Effects_files/jquery.min.js.download"></script><script src="./3D Thumbnail Hover Effects_files/jquery.hoverfold.js.download"></script><script type="text/javascript" src="./3D Thumbnail Hover Effects_files/modernizr.custom.69142.js.download"></script>
+	</head>
+	<body>
+
+		<div class="container">
+			<header>
+			<h1><span>3D Thumbnail</span> Hover Effects</h1>
+			<h2>Ading some perspective with CSS3 and jQuery — <strong>best viewed in Webkit browsers</strong></h2>
+			
+			<div class="support-note"><!-- let's check browser support with modernizr -->
+			<span class="no-cssanimation">CSS animations are not supported in your browser</span>
+			<span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+			<span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span>
+			<span class="no-csstransitions">CSS transitions are not supported in your browsers.</span>
+			</div>
+			</header>
+
+			<div id="grid" class="main">
+				<div class="view">
+				<div class="view-back">
+				<span data-icon="A">566</span>
+				<span data-icon="B">124</span>
+				<a href="file:///E:/Responsive%20website/Dindex.html">→</a>
+				
+				</div>
+				
+				<div class="slice s1"><span class="overlay"></span><div class="slice s2"><span class="overlay"></span><div class="slice s3"><span class="overlay"></span><div class="slice s4"><span class="overlay"></span><div class="slice s5"><span class="overlay"></span></div></div></div></div></div></div>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+			
+				Modernizr.load({
+								test:Modernizr.csstransforms3d && Modernizr.csstransitions,
+				yep : ['http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','E:/Responsive website/jquery.hoverfold.js'],
+				nope: 'css/fallback.css',
+				callback : function( url, result, key ){
+				
+				if(url === 'E:/Responsive website/jquery.hoverfold.js'){
+				$( '#grid' ).hoverfold();
+				}
+				}
+				});
+				
+				</script>
+
+	
+	</body></html>
